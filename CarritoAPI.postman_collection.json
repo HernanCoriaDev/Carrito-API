@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "134246d0-bb6c-4f26-a2f3-b23833da6541",
+		"name": "CarritoAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40084459"
+	},
+	"item": [
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "GetCartById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7024/api/v1/cart/7",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"7"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetExpensiveProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7024/api/v1/cart/get-expensive-products/42299538",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"get-expensive-products",
+								"42299538"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllCarts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7024/api/v1/cart/all-carts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"all-carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateCart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7024/api/v1/cart/create-cart/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"create-cart",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddProductToCart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cartId\": 0,\r\n  \"productId\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7024/api/v1/cart/add-to-cart",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"add-to-cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProduct",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7024/api/v1/cart/delete-product/1/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"delete-product",
+								"1",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCartById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7024/api/v1/cart/borrar-cart/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"borrar-cart",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "UserById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7024/api/v1/user/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"dni\": \"11111111\",\r\n  \"vip\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7024/api/v1/user",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Monitor 27\",\r\n  \"price\": 1000,\r\n  \"description\": \"Asus\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7024/api/v1/product/create-products",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"create-products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7024/api/v1/product/all-products",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"all-products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
